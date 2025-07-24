@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>服装识别系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>服装识别系统</h1>
+    <section id="upload-section">
+        <h2>上传服装图片</h2>
+        <form id="upload-form">
+            <input type="file" id="image-input" name="file" accept="image/*" multiple>
+            <button type="button" id="upload-btn">上传</button>
+        </form>
+    </section>
+    <section id="search-section">
+        <h2>搜索服装</h2>
+        <input type="text" id="search-input" placeholder="输入关键词或标签">
+        <button id="search-btn">搜索</button>
+        <button id="reset-btn">重置</button>
+    </section>
+    <section id="gallery-section">
+        <h2>服装库</h2>
+        <div id="gallery" class="grid"></div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html> 
